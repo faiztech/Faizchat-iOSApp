@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		73061FB41F7AA30400C47FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73061FB31F7AA30400C47FBF /* AppDelegate.swift */; };
-		73061FB61F7AA30400C47FBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73061FB51F7AA30400C47FBF /* ViewController.swift */; };
+		73061FB61F7AA30400C47FBF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73061FB51F7AA30400C47FBF /* SignInViewController.swift */; };
 		73061FB91F7AA30400C47FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73061FB71F7AA30400C47FBF /* Main.storyboard */; };
 		73061FBC1F7AA30400C47FBF /* Faizchat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73061FBA1F7AA30400C47FBF /* Faizchat.xcdatamodeld */; };
 		73061FBE1F7AA30400C47FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73061FBD1F7AA30400C47FBF /* Assets.xcassets */; };
 		73061FC11F7AA30400C47FBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73061FBF1F7AA30400C47FBF /* LaunchScreen.storyboard */; };
+		73061FC91F7AA60600C47FBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73061FC81F7AA60600C47FBF /* GoogleService-Info.plist */; };
+		BB90111EDCD8654BCC2746A2 /* Pods_Faizchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068AE37893ECD51C363BAF9 /* Pods_Faizchat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73061FB01F7AA30400C47FBF /* Faizchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faizchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73061FB31F7AA30400C47FBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73061FB51F7AA30400C47FBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73061FB51F7AA30400C47FBF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		73061FB81F7AA30400C47FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73061FBB1F7AA30400C47FBF /* Faizchat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Faizchat.xcdatamodel; sourceTree = "<group>"; };
 		73061FBD1F7AA30400C47FBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73061FC01F7AA30400C47FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73061FC21F7AA30400C47FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73061FC81F7AA60600C47FBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7ED03316A923BBE19DCFE554 /* Pods-Faizchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faizchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faizchat/Pods-Faizchat.release.xcconfig"; sourceTree = "<group>"; };
+		9CE8BAA59A602E9CFD7CDE44 /* Pods-Faizchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faizchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faizchat/Pods-Faizchat.debug.xcconfig"; sourceTree = "<group>"; };
+		D068AE37893ECD51C363BAF9 /* Pods_Faizchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faizchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB90111EDCD8654BCC2746A2 /* Pods_Faizchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				73061FB21F7AA30400C47FBF /* Faizchat */,
 				73061FB11F7AA30400C47FBF /* Products */,
+				EF611AD0FC0EEAD76830FD69 /* Pods */,
+				F9017C95A378D1EEE714D029 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +66,32 @@
 			isa = PBXGroup;
 			children = (
 				73061FB31F7AA30400C47FBF /* AppDelegate.swift */,
-				73061FB51F7AA30400C47FBF /* ViewController.swift */,
+				73061FB51F7AA30400C47FBF /* SignInViewController.swift */,
 				73061FB71F7AA30400C47FBF /* Main.storyboard */,
 				73061FBD1F7AA30400C47FBF /* Assets.xcassets */,
 				73061FBF1F7AA30400C47FBF /* LaunchScreen.storyboard */,
 				73061FC21F7AA30400C47FBF /* Info.plist */,
 				73061FBA1F7AA30400C47FBF /* Faizchat.xcdatamodeld */,
+				73061FC81F7AA60600C47FBF /* GoogleService-Info.plist */,
 			);
 			path = Faizchat;
+			sourceTree = "<group>";
+		};
+		EF611AD0FC0EEAD76830FD69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CE8BAA59A602E9CFD7CDE44 /* Pods-Faizchat.debug.xcconfig */,
+				7ED03316A923BBE19DCFE554 /* Pods-Faizchat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9017C95A378D1EEE714D029 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D068AE37893ECD51C363BAF9 /* Pods_Faizchat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73061FC51F7AA30400C47FBF /* Build configuration list for PBXNativeTarget "Faizchat" */;
 			buildPhases = (
+				27BDFC95CE0868BEC4BA3440 /* [CP] Check Pods Manifest.lock */,
 				73061FAC1F7AA30400C47FBF /* Sources */,
 				73061FAD1F7AA30400C47FBF /* Frameworks */,
 				73061FAE1F7AA30400C47FBF /* Resources */,
+				CFD54440A0F05A8DC1C495C1 /* [CP] Embed Pods Frameworks */,
+				865881C826D3EADB710AF07F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73061FC11F7AA30400C47FBF /* LaunchScreen.storyboard in Resources */,
+				73061FC91F7AA60600C47FBF /* GoogleService-Info.plist in Resources */,
 				73061FBE1F7AA30400C47FBF /* Assets.xcassets in Resources */,
 				73061FB91F7AA30400C47FBF /* Main.storyboard in Resources */,
 			);
@@ -133,12 +164,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27BDFC95CE0868BEC4BA3440 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Faizchat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		865881C826D3EADB710AF07F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Faizchat/Pods-Faizchat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFD54440A0F05A8DC1C495C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Faizchat/Pods-Faizchat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Faizchat/Pods-Faizchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73061FAC1F7AA30400C47FBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73061FB61F7AA30400C47FBF /* ViewController.swift in Sources */,
+				73061FB61F7AA30400C47FBF /* SignInViewController.swift in Sources */,
 				73061FBC1F7AA30400C47FBF /* Faizchat.xcdatamodeld in Sources */,
 				73061FB41F7AA30400C47FBF /* AppDelegate.swift in Sources */,
 			);
@@ -275,6 +362,7 @@
 		};
 		73061FC61F7AA30400C47FBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE8BAA59A602E9CFD7CDE44 /* Pods-Faizchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q75836UFYY;
@@ -289,6 +377,7 @@
 		};
 		73061FC71F7AA30400C47FBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED03316A923BBE19DCFE554 /* Pods-Faizchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q75836UFYY;
@@ -320,6 +409,7 @@
 				73061FC71F7AA30400C47FBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
