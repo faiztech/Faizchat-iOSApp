@@ -14,6 +14,8 @@
 		73061FBE1F7AA30400C47FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73061FBD1F7AA30400C47FBF /* Assets.xcassets */; };
 		73061FC11F7AA30400C47FBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73061FBF1F7AA30400C47FBF /* LaunchScreen.storyboard */; };
 		73061FC91F7AA60600C47FBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73061FC81F7AA60600C47FBF /* GoogleService-Info.plist */; };
+		734453A11F7AD21300A2A033 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734453A01F7AD21300A2A033 /* SnapsViewController.swift */; };
+		734453A31F7AD62900A2A033 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734453A21F7AD62900A2A033 /* PictureViewController.swift */; };
 		BB90111EDCD8654BCC2746A2 /* Pods_Faizchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068AE37893ECD51C363BAF9 /* Pods_Faizchat.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,9 @@
 		73061FC01F7AA30400C47FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73061FC21F7AA30400C47FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73061FC81F7AA60600C47FBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7344539F1F7ACE5100A2A033 /* Faizchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Faizchat.entitlements; sourceTree = "<group>"; };
+		734453A01F7AD21300A2A033 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		734453A21F7AD62900A2A033 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		7ED03316A923BBE19DCFE554 /* Pods-Faizchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faizchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faizchat/Pods-Faizchat.release.xcconfig"; sourceTree = "<group>"; };
 		9CE8BAA59A602E9CFD7CDE44 /* Pods-Faizchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faizchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faizchat/Pods-Faizchat.debug.xcconfig"; sourceTree = "<group>"; };
 		D068AE37893ECD51C363BAF9 /* Pods_Faizchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faizchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +70,11 @@
 		73061FB21F7AA30400C47FBF /* Faizchat */ = {
 			isa = PBXGroup;
 			children = (
+				7344539F1F7ACE5100A2A033 /* Faizchat.entitlements */,
 				73061FB31F7AA30400C47FBF /* AppDelegate.swift */,
 				73061FB51F7AA30400C47FBF /* SignInViewController.swift */,
+				734453A01F7AD21300A2A033 /* SnapsViewController.swift */,
+				734453A21F7AD62900A2A033 /* PictureViewController.swift */,
 				73061FB71F7AA30400C47FBF /* Main.storyboard */,
 				73061FBD1F7AA30400C47FBF /* Assets.xcassets */,
 				73061FBF1F7AA30400C47FBF /* LaunchScreen.storyboard */,
@@ -129,6 +137,11 @@
 				TargetAttributes = {
 					73061FAF1F7AA30400C47FBF = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -229,9 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734453A11F7AD21300A2A033 /* SnapsViewController.swift in Sources */,
 				73061FB61F7AA30400C47FBF /* SignInViewController.swift in Sources */,
 				73061FBC1F7AA30400C47FBF /* Faizchat.xcdatamodeld in Sources */,
 				73061FB41F7AA30400C47FBF /* AppDelegate.swift in Sources */,
+				734453A31F7AD62900A2A033 /* PictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
