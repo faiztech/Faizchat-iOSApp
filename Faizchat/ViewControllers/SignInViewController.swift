@@ -82,5 +82,9 @@ class SignInViewController: UIViewController {
       
    }
    
+   @IBAction func SignUpTapped(_ sender: Any) {
+      
+      performSegue(withIdentifier: "SignUpSegue", sender: nil)
+   }
 }
 
