@@ -84,13 +84,18 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate, U
             print("Upload Completed!!")
             
             //performing segue function
-            self.performSegue(withIdentifier: "selectSegue", sender: nil)
+            self.performSegue(withIdentifier: "selectSegue", sender: metadata?.downloadURL()?.absoluteString)
          }
       }
    }
    
    //doing something before segue to next screen
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      let nextVC = segue.destination as! SelectContactViewController
+      nextVC.imageURL = sender as! String
+      nextVC.desc = imageDescription.text!
+      
+      
       
    }
 }

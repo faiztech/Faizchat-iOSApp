@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		73061FB41F7AA30400C47FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73061FB31F7AA30400C47FBF /* AppDelegate.swift */; };
 		73061FB61F7AA30400C47FBF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73061FB51F7AA30400C47FBF /* SignInViewController.swift */; };
-		73061FB91F7AA30400C47FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73061FB71F7AA30400C47FBF /* Main.storyboard */; };
 		73061FBC1F7AA30400C47FBF /* Faizchat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73061FBA1F7AA30400C47FBF /* Faizchat.xcdatamodeld */; };
 		73061FBE1F7AA30400C47FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73061FBD1F7AA30400C47FBF /* Assets.xcassets */; };
 		73061FC11F7AA30400C47FBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73061FBF1F7AA30400C47FBF /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		734453A31F7AD62900A2A033 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734453A21F7AD62900A2A033 /* PictureViewController.swift */; };
 		734453AB1F7BEA3B00A2A033 /* SelectContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734453AA1F7BEA3B00A2A033 /* SelectContactViewController.swift */; };
 		734453AF1F7BF0D600A2A033 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734453AE1F7BF0D600A2A033 /* User.swift */; };
+		736011BC1F7C0D63005BBA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731354EA1F7C04E800AFDCE9 /* Main.storyboard */; };
 		BB90111EDCD8654BCC2746A2 /* Pods_Faizchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068AE37893ECD51C363BAF9 /* Pods_Faizchat.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,12 +25,12 @@
 		73061FB01F7AA30400C47FBF /* Faizchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faizchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73061FB31F7AA30400C47FBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73061FB51F7AA30400C47FBF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		73061FB81F7AA30400C47FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73061FBB1F7AA30400C47FBF /* Faizchat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Faizchat.xcdatamodel; sourceTree = "<group>"; };
 		73061FBD1F7AA30400C47FBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73061FC01F7AA30400C47FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73061FC21F7AA30400C47FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73061FC81F7AA60600C47FBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		731354EA1F7C04E800AFDCE9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Faizchat/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		7344539F1F7ACE5100A2A033 /* Faizchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Faizchat.entitlements; sourceTree = "<group>"; };
 		734453A01F7AD21300A2A033 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		734453A21F7AD62900A2A033 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
@@ -74,16 +74,16 @@
 		73061FB21F7AA30400C47FBF /* Faizchat */ = {
 			isa = PBXGroup;
 			children = (
-				734453B01F7BF0F900A2A033 /* ViewControllers */,
 				734453B11F7BF15700A2A033 /* Models */,
-				7344539F1F7ACE5100A2A033 /* Faizchat.entitlements */,
+				734453B01F7BF0F900A2A033 /* ViewControllers */,
 				73061FB31F7AA30400C47FBF /* AppDelegate.swift */,
-				73061FB71F7AA30400C47FBF /* Main.storyboard */,
 				73061FBD1F7AA30400C47FBF /* Assets.xcassets */,
-				73061FBF1F7AA30400C47FBF /* LaunchScreen.storyboard */,
-				73061FC21F7AA30400C47FBF /* Info.plist */,
+				7344539F1F7ACE5100A2A033 /* Faizchat.entitlements */,
 				73061FBA1F7AA30400C47FBF /* Faizchat.xcdatamodeld */,
 				73061FC81F7AA60600C47FBF /* GoogleService-Info.plist */,
+				73061FC21F7AA30400C47FBF /* Info.plist */,
+				731354EA1F7C04E800AFDCE9 /* Main.storyboard */,
+				73061FBF1F7AA30400C47FBF /* LaunchScreen.storyboard */,
 			);
 			path = Faizchat;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 				73061FC11F7AA30400C47FBF /* LaunchScreen.storyboard in Resources */,
 				73061FC91F7AA60600C47FBF /* GoogleService-Info.plist in Resources */,
 				73061FBE1F7AA30400C47FBF /* Assets.xcassets in Resources */,
-				73061FB91F7AA30400C47FBF /* Main.storyboard in Resources */,
+				736011BC1F7C0D63005BBA52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,14 +277,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		73061FB71F7AA30400C47FBF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				73061FB81F7AA30400C47FBF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		73061FBF1F7AA30400C47FBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

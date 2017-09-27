@@ -17,6 +17,11 @@ class SelectContactViewController: UIViewController, UITableViewDelegate, UITabl
    //creating an array of users
    var users : [User] = []
    
+   var imageURL = ""
+   var desc = " "
+   
+   
+   
    override func viewDidLoad() {
       super.viewDidLoad()
       
@@ -69,6 +74,18 @@ class SelectContactViewController: UIViewController, UITableViewDelegate, UITabl
       
       return cell
       
+   }
+   
+   //to select from tableView
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      
+      let user = users[indexPath.row]
+      
+      let snap = ["email" : user.email, "description" : desc, "imageURL" : imageURL]
+
+      
+      //initating send
+      Database.database().reference().child("users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
    }
    
    
