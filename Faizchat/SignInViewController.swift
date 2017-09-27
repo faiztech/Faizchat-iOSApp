@@ -31,11 +31,11 @@ class SignInViewController: UIViewController {
                            
                            //displaying wrong email error in login page
                            if error != nil{
-                           if Int((error! as NSError).code) == 17008
-                           {
-                              self.errorLabel.text = "The email doesn't seem to be right"
-                              self.errorLabel.isHidden = false
-                           }
+                              if Int((error! as NSError).code) == 17008
+                              {
+                                 self.errorLabel.text = "The email doesn't seem to be right"
+                                 self.errorLabel.isHidden = false
+                              }
                            }
                            
                            // for debugger
@@ -55,8 +55,18 @@ class SignInViewController: UIViewController {
                                                          
                                                       }else{
                                                          print("Created user successfully")
+                                                         
+                                                         //adding the user to the database
+                                                         
+                                                         //connecting to database
+                                                         Database.database().reference().child("users").child(user!.uid).child("email").setValue(user?.email!)
+                                                         
+                                                         
+                                                         
+                                                         
+                                                         
                                                          self.performSegue(withIdentifier: "signInSegue", sender: nil)
-
+                                                         
                                                       }
                               })
                            }
