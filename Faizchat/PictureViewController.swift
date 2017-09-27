@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Firebase
 
 class PictureViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+   
    @IBOutlet weak var nextButton: UIButton!
    @IBOutlet weak var imageView: UIImageView!
    @IBOutlet weak var imageDescription: UITextField!
@@ -17,12 +18,12 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate, U
    var imagePicker = UIImagePickerController()
    
    override func viewDidLoad() {
-        super.viewDidLoad()
+      super.viewDidLoad()
       
       //cam implementation
       imagePicker.delegate = self
-
-    
+      
+      
    }
    
    //picking image
@@ -51,6 +52,45 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate, U
       
       
    }
+   
+   
    @IBAction func nextTapped(_ sender: Any) {
+      
+      //As soon as next tapped diabling Next
+      nextButton.isEnabled = false
+      
+      //referencing to the images folder inside Firebase storage
+      let imagesFolder = Storage.storage().reference().child("images")
+      
+      //converting our image to some sort of data in jpeg and compressing it
+      let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
+      
+      
+      //Replace with beclow if you want full quality images
+      //let imageData = UIImagePNGRepresentation(imageView.image!)!
+      
+      //uploading images...
+      imagesFolder.child("\(NSUUID().uuidString).jpg").putData(imageData, metadata: nil) { (metadata, error) in
+         
+         print("Trying to upload...")
+         
+         //checking for error
+         if error != nil
+         {
+            print("Error has occured!")
+            print(error!)
+         }else
+         {
+            print("Upload Completed!!")
+            
+            //performing segue function
+            self.performSegue(withIdentifier: "selectSegue", sender: nil)
+         }
+      }
+   }
+   
+   //doing something before segue to next screen
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
    }
 }
