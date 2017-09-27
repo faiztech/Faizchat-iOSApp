@@ -19,6 +19,7 @@ class SelectContactViewController: UIViewController, UITableViewDelegate, UITabl
    
    var imageURL = ""
    var desc = " "
+   var uuid = ""
    
    
    
@@ -81,7 +82,7 @@ class SelectContactViewController: UIViewController, UITableViewDelegate, UITabl
       
       let user = users[indexPath.row]
       
-      let snap = ["from" : Auth.auth().currentUser!.email, "description" : desc, "imageURL" : imageURL]
+      let snap = ["from" : Auth.auth().currentUser!.email, "description" : desc, "imageURL" : imageURL, "uuid" : uuid]
 
       //initating send
    Database.database().reference().child("users").child(user.uid).child("snaps").childByAutoId().setValue(snap)

@@ -27,6 +27,13 @@ class ViewSnapViewController: UIViewController {
    }
    
    override func viewWillDisappear(_ animated: Bool) {
+      //deleting from databases
       Database.database().reference().child("users").child(Auth.auth().currentUser!.uid).child("snaps").child(snap.key).removeValue()
+      
+      //deleting from storage
+      Storage.storage().reference().child("images").child("\(snap.uuid).jpg").delete { (error) in
+         
+         print("Picture deleted from storage")
+      }
    }
 }

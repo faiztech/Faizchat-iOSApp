@@ -17,12 +17,15 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate, U
    
    var imagePicker = UIImagePickerController()
    
+   var uuid = NSUUID().uuidString
+   
    override func viewDidLoad() {
       super.viewDidLoad()
       
       //cam implementation
       imagePicker.delegate = self
       
+      nextButton.isEnabled = false
       
    }
    
@@ -38,8 +41,12 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate, U
       //changing backgroud color to transparent
       imageView.backgroundColor = UIColor.clear
       
+      nextButton.isEnabled = true
+      
       //dismissing the image picker
       imagePicker.dismiss(animated: true, completion: nil)
+      
+      
    }
    
    
@@ -70,7 +77,7 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate, U
       //let imageData = UIImagePNGRepresentation(imageView.image!)!
       
       //uploading images...
-      imagesFolder.child("\(NSUUID().uuidString).jpg").putData(imageData, metadata: nil) { (metadata, error) in
+      imagesFolder.child("\(uuid).jpg").putData(imageData, metadata: nil) { (metadata, error) in
          
          print("Trying to upload...")
          
@@ -94,6 +101,8 @@ class PictureViewController: UIViewController,UIImagePickerControllerDelegate, U
       let nextVC = segue.destination as! SelectContactViewController
       nextVC.imageURL = sender as! String
       nextVC.desc = imageDescription.text!
+      
+      nextVC.uuid = uuid
       
       
       
