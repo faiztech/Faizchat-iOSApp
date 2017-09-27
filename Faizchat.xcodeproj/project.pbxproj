@@ -17,6 +17,7 @@
 		734453A11F7AD21300A2A033 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734453A01F7AD21300A2A033 /* SnapsViewController.swift */; };
 		734453A31F7AD62900A2A033 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734453A21F7AD62900A2A033 /* PictureViewController.swift */; };
 		734453AB1F7BEA3B00A2A033 /* SelectContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734453AA1F7BEA3B00A2A033 /* SelectContactViewController.swift */; };
+		734453AF1F7BF0D600A2A033 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734453AE1F7BF0D600A2A033 /* User.swift */; };
 		BB90111EDCD8654BCC2746A2 /* Pods_Faizchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068AE37893ECD51C363BAF9 /* Pods_Faizchat.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		734453A01F7AD21300A2A033 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		734453A21F7AD62900A2A033 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		734453AA1F7BEA3B00A2A033 /* SelectContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectContactViewController.swift; sourceTree = "<group>"; };
+		734453AE1F7BF0D600A2A033 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7ED03316A923BBE19DCFE554 /* Pods-Faizchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faizchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Faizchat/Pods-Faizchat.release.xcconfig"; sourceTree = "<group>"; };
 		9CE8BAA59A602E9CFD7CDE44 /* Pods-Faizchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Faizchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Faizchat/Pods-Faizchat.debug.xcconfig"; sourceTree = "<group>"; };
 		D068AE37893ECD51C363BAF9 /* Pods_Faizchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Faizchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,12 +74,10 @@
 		73061FB21F7AA30400C47FBF /* Faizchat */ = {
 			isa = PBXGroup;
 			children = (
+				734453B01F7BF0F900A2A033 /* ViewControllers */,
+				734453B11F7BF15700A2A033 /* Models */,
 				7344539F1F7ACE5100A2A033 /* Faizchat.entitlements */,
 				73061FB31F7AA30400C47FBF /* AppDelegate.swift */,
-				73061FB51F7AA30400C47FBF /* SignInViewController.swift */,
-				734453A01F7AD21300A2A033 /* SnapsViewController.swift */,
-				734453A21F7AD62900A2A033 /* PictureViewController.swift */,
-				734453AA1F7BEA3B00A2A033 /* SelectContactViewController.swift */,
 				73061FB71F7AA30400C47FBF /* Main.storyboard */,
 				73061FBD1F7AA30400C47FBF /* Assets.xcassets */,
 				73061FBF1F7AA30400C47FBF /* LaunchScreen.storyboard */,
@@ -86,6 +86,25 @@
 				73061FC81F7AA60600C47FBF /* GoogleService-Info.plist */,
 			);
 			path = Faizchat;
+			sourceTree = "<group>";
+		};
+		734453B01F7BF0F900A2A033 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				73061FB51F7AA30400C47FBF /* SignInViewController.swift */,
+				734453A01F7AD21300A2A033 /* SnapsViewController.swift */,
+				734453A21F7AD62900A2A033 /* PictureViewController.swift */,
+				734453AA1F7BEA3B00A2A033 /* SelectContactViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		734453B11F7BF15700A2A033 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				734453AE1F7BF0D600A2A033 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EF611AD0FC0EEAD76830FD69 /* Pods */ = {
@@ -251,6 +270,7 @@
 				73061FBC1F7AA30400C47FBF /* Faizchat.xcdatamodeld in Sources */,
 				73061FB41F7AA30400C47FBF /* AppDelegate.swift in Sources */,
 				734453A31F7AD62900A2A033 /* PictureViewController.swift in Sources */,
+				734453AF1F7BF0D600A2A033 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
